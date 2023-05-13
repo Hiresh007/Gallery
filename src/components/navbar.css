@@ -1,0 +1,92 @@
+.navbar {
+  padding: 32px 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(30px);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  color: whitesmoke;
+  border-radius: 0 0 1.2rem 1.2rem;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 18px;
+  font-size: 30px;
+  position: absolute;
+  right: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  position: absolute;
+  left: 2rem;
+  font-size: 18px;
+}
+.nav-links button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.nav-links button .drop-icon {
+  font-size: 15px;
+}
+.nav-links button .drop-icon:hover {
+  transition: ease 400ms ease;
+  transform: rotate(180deg);
+}
+.menu {
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  background: rgba(4, 0, 32, 0.8);
+  transition: 0.5s;
+  left: 8rem;
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px 10px 0;
+  text-decoration: none;
+  line-height: 2rem;
+}
+.menu .links {
+  text-decoration: none;
+  color: aliceblue;
+  position: relative;
+  left: -2px;
+  font-size: 20px;
+}
+
+.menu .links:hover {
+  color: aqua;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    left: 9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-icons {
+    position: absolute;
+    left: 30%;
+    font-size: 2.5rem;
+  }
+}
